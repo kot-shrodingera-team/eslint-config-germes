@@ -1,9 +1,11 @@
 {
   "name": "@kot-shrodingera-team/eslint-config-germes",
   "version": "1.0.0",
+  "dependencies": {
+    "@kot-shrodingera-team/eslint-config-germes-base": "^1.0.0"
+  },
   "devDependencies": {
     "@kot-shrodingera-team/prettier-config-germes": "^1.0.0",
-    "@kot-shrodingera-team/eslint-config-germes-base": "^1.0.0",
     "eslint": "^7.6.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
