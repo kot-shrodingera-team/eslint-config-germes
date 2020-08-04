@@ -1,6 +1,6 @@
 {
   "name": "@kot-shrodingera-team/eslint-config-germes",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {
     "@kot-shrodingera-team/eslint-config-germes-base": "^1.0.0"
   },
