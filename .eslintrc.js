@@ -1,6 +1,28 @@
 module.exports = {
-  extends: '@kot-shrodingera-team/eslint-config-germes-base/.eslintrc',
+  env: {
+    browser: true,
+  },
+  globals: {
+    worker: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+  },
+  ignorePatterns: ['!.*', 'node_modules'],
   overrides: [
+    {
+      files: ['*.js'],
+      extends: ['airbnb-base', 'plugin:prettier/recommended'],
+    },
+    {
+      files: ['.prettierrc.js'],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          { devDependencies: true }, // Чтобы не было ошибки импортирования конфига
+        ],
+      },
+    },
     {
       files: ['*.ts'],
       parser: '@typescript-eslint/parser',
@@ -25,7 +47,7 @@ module.exports = {
         'import/no-extraneous-dependencies': [
           'error',
           {
-            devDependencies: true,
+            devDependencies: true, // Чтобы не было ошибки импортирования разных методов
           },
         ],
       },
