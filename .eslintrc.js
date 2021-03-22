@@ -8,7 +8,7 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
   },
-  ignorePatterns: ['!.*', 'node_modules'],
+  ignorePatterns: ['!.*', 'node_modules', 'dist/index.js'],
   overrides: [
     {
       files: ['*.js'],
